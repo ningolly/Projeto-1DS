@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    overflow-x: hidden; }
+
+.logo {
+    display: inline-flex;
+    top: 10%;
+    width: 200%;
+    height: 135px;
+    background-repeat: no-repeat;
+    object-fit:contain;
+}
+
+a {
+    display: inline-flex;
+    top: 10%;
+    background-repeat: no-repeat;
+    object-fit:contain;
+}
+
+h1.title {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 45.5%;
+    text-overflow:ellipsis;
+    text-shadow: rgb(34, 33, 33) 0.1em 0.2em 0.3em;
+}
+
+h3.subtitle {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 105%;
+    margin-left: 43.6%;
+    margin-top: 0.3%;
+    font-style: normal;
+    color: white;
+    object-fit: contain;
+    text-shadow: rgb(34, 33, 33) 0.1em 0.2em 0.3em;
+    display: block;
+}
+
+header {
+    background-image: url(img/imgprovi.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    width: 100vw;
+    height: 45vh;
+    display: block;
+}
+
+/* TEXTO/TITULO */
+
+h1.funciona {
+    margin-top: 5%;
+    margin-left: 12%;
+    display: flex;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 200%;
+    font-style: normal;
+    object-fit: contain;
+}
+
+.textos {
+    margin-left: 1%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: max(130%, 10%);
+    width: 58em;
+    height: 20em;
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-top: 1.5%;
+}
+
+/* Media Query */
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 500px) {
+    .logo{
+        width: 135px;
+        height: 20px;
+    }
+
+    a {
+        width: 73px;
+        height: 80px;
+    }
+
+    h1.title {
+        margin-left: 31%;
+        font-size: 150%;
+    }
+
+    h3.subtitle {
+        margin-left: 18%;
+    }
+
+    .textos {
+        margin-left: 8%;
+        flex-direction: column;
+        margin-top: 3vh;
+        max-width: 91vw;;
+        font-size: 105%;
+    }
+
+    h1.funciona {
+        margin-top: 8vh;
+        margin-left: 5vh;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-device-width: 1340px) and (max-device-height: 768px) {
+    .textos {
+        margin-left: 9%;
+        flex-direction: column;
+        margin-top: 3vh;
+        max-width: 100vw;;
+        font-size: 120%;
+        display: flex;
+    }
+
+    h1.funciona {
+        margin-left: 9%;
+    }
+
+    h1.title {
+        margin-top: -2%;
+    }
+
+    .logo{
+        width: 100%;
+        height: 135px;
+        margin-left: 3.2%;
+    }
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-height: 1080px) {
+    .textos {
+        margin-left: 12%;
+    }
+}

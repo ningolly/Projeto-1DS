@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body { 
+    overflow-x: hidden; }
+
+.logo {
+    display: inline-flex;
+    top: 10%;
+    width: 200%;
+    height: 135px;
+    background-repeat: no-repeat;
+    object-fit:contain;
+}
+
+a {
+    display: inline-flex;
+    top: 10%;
+    background-repeat: no-repeat;
+    object-fit:contain;
+}
+
+h1.title {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 43%;
+    text-overflow:ellipsis;
+    text-shadow: rgb(34, 33, 33) 0.1em 0.2em 0.3em;
+}
+
+h3.subtitle {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 105%;
+    margin-left: 38.6%;
+    margin-top: 0.3%;
+    font-style: normal;
+    color: white;
+    object-fit: contain;
+    text-shadow: rgb(34, 33, 33) 0.1em 0.2em 0.3em;
+    display: block;
+}
+
+header {
+    background-image: url(img/imgprovi.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+    width: 100vw;
+    height: 45vh;
+    display: block;
+}
+
+/* MER */
+
+h1.mertitle {
+    margin-top: 5%;
+    margin-left: 14%;
+    display: flex;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 200%;
+    font-style: normal;
+    object-fit: contain;
+}
+
+.texts {
+    margin-left: 14%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: max(130%, 10%);
+    max-width: 100%; 
+    margin: 0 auto; 
+    margin-top: 1.5%;
+    width: 58em;
+    height: 20em;
+}
+
+.mer {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 6%;
+}
+
+.der {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 100%; 
+    margin-top: 6%;
+}
+
+h1.dertitle {
+    margin-top: 20%;
+    margin-left: 14%;
+    display: flex;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 200%;
+    font-style: normal;
+    object-fit: contain;
+}
+
+/* MEDIA QUERY */
+/* CELULAR */
+@media only screen and (min-device-width: 0px) and (max-device-width: 500px) {
+    header {
+        background-size: 100%;
+            width: 120vw;
+            height: 45vh;
+    }
+
+    .logo{
+        width: 135px;
+        height: 20px;
+    }
+
+    h1.title {
+        margin-left: 17%;
+        margin-top: 8%;
+    }
+
+    h3.subtitle {
+        margin-left: 2%;
+        font-size: 100%;
+    }
+
+    h1.mertitle {
+        margin-top: 8vh;
+        margin-left: 7%;
+        font-size: 150%;
+    }
+
+    .texts {
+        margin-left: 8%;
+        flex-direction: column;
+        margin-top: 3vh;
+        max-width: 91vw;;
+        font-size: 103%;
+    }
+
+    .mer {
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: 6%;
+        margin-left: -5%;
+    }
+    
+    .der {
+        width: 900px;
+        margin: 0 auto;
+        max-width: 100%; 
+        margin-top: 6%;
+        margin-left: -4%;
+    }
+
+    h1.mertitle {
+        margin-top: 8vh;
+        margin-left: 7%;
+        font-size: 150%;
+    }
+
+    h1.dertitle {
+        margin-top: 15vh;
+        margin-left: 7%;
+        font-size: 150%;
+    }
+
+    a {
+        width: 73px;
+        height: 80px;
+    }
+}
+
+@media only screen and (min-device-width: 1340px) and (max-device-height: 768px) {
+    .logo{
+        width: 100%;
+        height: 135px;
+        margin-left: 3.2%;
+    }
+    
+    h1.title {
+        margin-top: -1%;
+        text-align: center;
+    }
+
+    h3.subtitle {
+        margin-left: 37%;
+    }
+
+    h1.mertitle {
+        margin-top: 8vh;
+        margin-left: 20vh;
+    }
+
+    .texts {
+        font-size: 120%;
+        margin-left: 20vh;
+        flex-direction: column;
+        margin-top: 3vh;
+        max-width: 91vw;;
+    }
+
+    h1.dertitle {
+        margin-top: 50vh;
+        margin-left: 20vh;
+    }
+
+    header {
+        background-size: 100%;
+        width: 100vw;
+        height: 45vh;
+        overflow-x: hidden;
+    }
+
+    .mer {
+        margin-left: 5%;
+    }
+
+    .der {
+        margin-left: 9%;
+    }
+}
+
+@media only screen and (min-device-width: 1920px) and (max-device-height: 1080px) {
+    h1.title {
+        text-align: center;
+    }
+
+    h3.subtitle {
+        text-align: bottom;
+    }
+
+    .mer {
+        margin-left: 9%;
+    }
+
+    .dertitle {
+        margin-left: 1%;
+    }
+}
